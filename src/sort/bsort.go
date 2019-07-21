@@ -4,8 +4,6 @@ import (
 	"fmt"
 )
 
-var jumbledbox [10]int = [10]int{9, 4, 3, 9, 3, 2, 1, 9, 6, 1}
-
 func bubbleSort(forsort [10]int) {
 	n := 10
 	ans := true
@@ -25,5 +23,10 @@ func bubbleSort(forsort [10]int) {
 
 func main() {
 	fmt.Println("lets sort a phone number")
+	var jumbledbox [10]int
+	fmt.Println("Enter 10 nos:\n")
+	for a := 0; a < 10; a++ {
+		fmt.Scanln(&jumbledbox[a])
+	}
 	bubbleSort(jumbledbox)
 }
