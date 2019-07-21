@@ -30,7 +30,7 @@ func main() {
 	fmt.Printf("%v, %T\n", t, t)
 
 	var r float64
-	r = float64(r)
+	r = float64(t)
 	fmt.Printf("%v, %T\n", r, r)
 
 }
