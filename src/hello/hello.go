@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 var (
 	p  int    = 4
@@ -33,4 +36,9 @@ func main() {
 	r = float64(t)
 	fmt.Printf("%v, %T\n", r, r)
 
+	var q string
+	q = string(t) // will print unicde charater with code t
+	fmt.Printf("%v, %T\n", q, q)
+	q = strconv.Itoa(t) //will print exact value of converted data
+	fmt.Printf("%v, %T\n", q, q)
 }
